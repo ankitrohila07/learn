@@ -5,8 +5,9 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="dev" class="com.spring.Dev">
-        <property name="age" value="21" />
+<!--        <property name="laptop" ref="lap1" />-->
+        <constructor-arg ref="lap1" />
     </bean>
-    <bean id="laptop" class="com.spring.Laptop">
+    <bean id="lap1" class="com.spring.Laptop">
     </bean>
 </beans>
