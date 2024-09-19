@@ -5,9 +5,11 @@
         http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="dev" class="com.spring.Dev">
-<!--        <property name="laptop" ref="lap1" />-->
-        <constructor-arg ref="lap1" />
+        <property name="computer" ref="lap1" />
     </bean>
+
     <bean id="lap1" class="com.spring.Laptop">
     </bean>
+
+    <bean id="desk1" class="com.spring.Desktop"/>
 </beans>

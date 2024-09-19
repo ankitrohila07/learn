@@ -2,32 +2,20 @@ package com.spring;
 
 
 public class Dev {
-    private Laptop laptop;
-
-    public Laptop getLaptop() {
-        return laptop;
+    private Computer computer;
+    public Computer getComputer(){
+        return computer;
+    }
+    public void setComputer(Computer computer){
+        this.computer=computer;
     }
 
-    public void setLaptop(Laptop laptop) {
-        this.laptop = laptop;
+    public Dev(){
+        System.out.println("Dev Constructor");
     }
-
-    private int age;
-    public int getAge(){
-        return age;
-    }
-    public void setAge(int age){
-        this.age=age;
-    }
-    public Dev(Laptop laptop){
-        this.laptop=laptop;
-    }
-//    public Dev(){
-//        System.out.println("Dev Constructor");
-//    }
 
     public void build(){
         System.out.println("working on Awesome Project");
-        laptop.compile();
+        computer.compile();
     }
 }
